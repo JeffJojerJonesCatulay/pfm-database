@@ -21,3 +21,5 @@ The database module is designed to:
 - **Migrations** – Version-controlled updates to the database structure
 - **Seed Data** – Sample datasets for testing and development
 - **Configuration** – Environment and connection settings
+
+![ERD](erd/erd.png)

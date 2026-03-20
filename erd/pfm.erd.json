@@ -1,0 +1,115 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dineug/erd-editor/main/json-schema/schema.json",
+  "version": "3.0.0",
+  "settings": {
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": -3,
+    "zoomLevel": 1,
+    "show": 511,
+    "database": 8,
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": 1,
+    "tableNameCase": 4,
+    "columnNameCase": 2,
+    "bracketType": 1,
+    "relationshipDataTypeSync": true,
+    "relationshipOptimization": false,
+    "columnOrder": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "maxWidthComment": -1,
+    "ignoreSaveSettings": 0
+  },
+  "doc": {
+    "tableIds": [
+      "fOjrMx_o0AXvApo38oGAU"
+    ],
+    "relationshipIds": [],
+    "indexIds": [],
+    "memoIds": []
+  },
+  "collections": {
+    "tableEntities": {
+      "fOjrMx_o0AXvApo38oGAU": {
+        "id": "fOjrMx_o0AXvApo38oGAU",
+        "name": "AllocationMapping",
+        "comment": "",
+        "columnIds": [
+          "YD_JISp4g24kTRi1Sx0R9",
+          "ThsNTP0Ab4ja_01f8m5Jb"
+        ],
+        "seqColumnIds": [
+          "YD_JISp4g24kTRi1Sx0R9",
+          "ThsNTP0Ab4ja_01f8m5Jb"
+        ],
+        "ui": {
+          "x": 199,
+          "y": 100,
+          "zIndex": 2,
+          "widthName": 103,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1774021681503,
+          "createAt": 1774021501818
+        }
+      }
+    },
+    "tableColumnEntities": {
+      "YD_JISp4g24kTRi1Sx0R9": {
+        "id": "YD_JISp4g24kTRi1Sx0R9",
+        "tableId": "fOjrMx_o0AXvApo38oGAU",
+        "name": "id",
+        "comment": "",
+        "dataType": "NUMBER",
+        "default": "",
+        "options": 15,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1774021795130,
+          "createAt": 1774021525785
+        }
+      },
+      "ThsNTP0Ab4ja_01f8m5Jb": {
+        "id": "ThsNTP0Ab4ja_01f8m5Jb",
+        "tableId": "fOjrMx_o0AXvApo38oGAU",
+        "name": "allocation",
+        "comment": "",
+        "dataType": "VARCHAR2",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 61,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1774021781898,
+          "createAt": 1774021652615
+        }
+      }
+    },
+    "relationshipEntities": {},
+    "indexEntities": {},
+    "indexColumnEntities": {},
+    "memoEntities": {}
+  }
+}

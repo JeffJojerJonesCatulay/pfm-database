@@ -21,3 +21,19 @@ The database module is designed to:
 - **Migrations** – Version-controlled updates to the database structure
 - **Seed Data** – Sample datasets for testing and development
 - **Configuration** – Environment and connection settings
+
+## ERD - Credit Card Related Tables
+
+![ERD](erd/image/pfm-cc-related.png)
+
+## ERD - Investment/Savings Related Tables
+
+![ERD](erd/image/pfm-investment-related.png)
+
+## ERD - Salary Related Tables
+
+![ERD](erd/image/pfm-salary-related.png)
+
+## ERD - Want List Related Tables
+
+![ERD](erd/image/pfm-want-related.png)

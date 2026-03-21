@@ -14,6 +14,3 @@ CREATE TABLE WantList
   updateBy       VARCHAR(255) NULL    ,
   PRIMARY KEY (id)
 );
-
-ALTER TABLE WantList
-  ADD CONSTRAINT UQ_id UNIQUE (id);

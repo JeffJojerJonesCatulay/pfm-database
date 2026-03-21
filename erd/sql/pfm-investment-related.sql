@@ -1,159 +1,79 @@
 
 CREATE TABLE AllocationMapping
 (
-  allocId     NUMBER   NOT NULL,
-  allocation  VARCHAR2 NOT NULL,
-  type        VARCHAR2 NOT NULL,
-  description VARCHAR2,
-  status      VARCHAR2 NOT NULL,
-  dateAdded   DATE     NOT NULL,
-  addedBy     VARCHAR2 NOT NULL,
-  updateDate  DATE    ,
-  updateBy    VARCHAR2,
-  CONSTRAINT PK_AllocationMapping PRIMARY KEY (allocId)
+  allocId     INT          NOT NULL AUTO_INCREMENT,
+  allocation  VARCHAR(255) NOT NULL,
+  type        VARCHAR(255) NOT NULL,
+  description VARCHAR(255) NULL    ,
+  status      VARCHAR(255) NOT NULL,
+  dateAdded   DATE         NOT NULL,
+  addedBy     VARCHAR(255) NOT NULL,
+  updateDate  DATE         NULL    ,
+  updateBy    VARCHAR(255) NULL    ,
+  PRIMARY KEY (allocId)
 );
-
-ALTER TABLE AllocationMapping
-  ADD CONSTRAINT UQ_allocId UNIQUE (allocId);
-
-CREATE SEQUENCE SEQ_AllocationMapping
-START WITH 1
-INCREMENT BY 1;
-
-CREATE OR REPLACE TRIGGER SEQ_TRG_AllocationMapping
-BEFORE INSERT ON AllocationMapping
-REFERENCING NEW AS NEW FOR EACH ROW
-BEGIN
-  SELECT SEQ_AllocationMapping.NEXTVAL
-  INTO: NEW.allocId
-  FROM DUAL;
-END;
 
 CREATE TABLE InvestmentsAndSavingsDay
 (
-  id          NUMBER   NOT NULL,
-  allocId     NUMBER   NOT NULL,
-  date        DATE     NOT NULL,
-  valueAdded  NUMBER   NOT NULL,
-  marketValue NUMBER   NOT NULL,
-  dateAdded   DATE     NOT NULL,
-  addedBy     VARCHAR2 NOT NULL,
-  updateDate  DATE    ,
-  updateBy    VARCHAR2,
-  CONSTRAINT PK_InvestmentsAndSavingsDay PRIMARY KEY (id)
+  id          INT          NOT NULL AUTO_INCREMENT,
+  allocId     INT          NOT NULL,
+  date        DATE         NOT NULL,
+  valueAdded  INT          NOT NULL,
+  marketValue INT          NOT NULL,
+  dateAdded   DATE         NOT NULL,
+  addedBy     VARCHAR(255) NOT NULL,
+  updateDate  DATE         NULL    ,
+  updateBy    VARCHAR(255) NULL    ,
+  PRIMARY KEY (id)
 );
-
-ALTER TABLE InvestmentsAndSavingsDay
-  ADD CONSTRAINT UQ_id UNIQUE (id);
-
-CREATE SEQUENCE SEQ_InvestmentsAndSavingsDay
-START WITH 1
-INCREMENT BY 1;
-
-CREATE OR REPLACE TRIGGER SEQ_TRG_InvestmentsAndSavingsDay
-BEFORE INSERT ON InvestmentsAndSavingsDay
-REFERENCING NEW AS NEW FOR EACH ROW
-BEGIN
-  SELECT SEQ_InvestmentsAndSavingsDay.NEXTVAL
-  INTO: NEW.id
-  FROM DUAL;
-END;
 
 CREATE TABLE MonthlyGrowth
 (
-  id                NUMBER   NOT NULL,
-  allocId           NUMBER   NOT NULL,
-  month             VARCHAR2 NOT NULL,
-  year              NUMBER   NOT NULL,
-  contribution      NUMBER   NOT NULL,
-  totalContribution NUMBER   NOT NULL,
-  currentValue      NUMBER   NOT NULL,
-  growthRate        NUMBER   NOT NULL,
-  previousContrib   NUMBER   NOT NULL,
-  dateAdded         DATE     NOT NULL,
-  addedBy           VARCHAR2 NOT NULL,
-  updateDate        DATE    ,
-  updateBy          VARCHAR2,
-  CONSTRAINT PK_MonthlyGrowth PRIMARY KEY (id)
+  id                INT          NOT NULL AUTO_INCREMENT,
+  allocId           INT          NOT NULL,
+  month             VARCHAR(255) NOT NULL,
+  year              INT          NOT NULL,
+  contribution      INT          NOT NULL,
+  totalContribution INT          NOT NULL,
+  currentValue      INT          NOT NULL,
+  growthRate        INT          NOT NULL,
+  previousContrib   INT          NOT NULL,
+  dateAdded         DATE         NOT NULL,
+  addedBy           VARCHAR(255) NOT NULL,
+  updateDate        DATE         NULL    ,
+  updateBy          VARCHAR(255) NULL    ,
+  PRIMARY KEY (id)
 );
-
-ALTER TABLE MonthlyGrowth
-  ADD CONSTRAINT UQ_id UNIQUE (id);
-
-CREATE SEQUENCE SEQ_MonthlyGrowth
-START WITH 1
-INCREMENT BY 1;
-
-CREATE OR REPLACE TRIGGER SEQ_TRG_MonthlyGrowth
-BEFORE INSERT ON MonthlyGrowth
-REFERENCING NEW AS NEW FOR EACH ROW
-BEGIN
-  SELECT SEQ_MonthlyGrowth.NEXTVAL
-  INTO: NEW.id
-  FROM DUAL;
-END;
 
 CREATE TABLE NetWorth
 (
-  id         NUMBER   NOT NULL,
-  allocId    NUMBER   NOT NULL,
-  month      VARCHAR2 NOT NULL,
-  year       NUMBER   NOT NULL,
-  value      NUMBER   NOT NULL,
-  dateAdded  DATE     NOT NULL,
-  addedBy    VARCHAR2 NOT NULL,
-  updateDate DATE    ,
-  updateBy   VARCHAR2,
-  CONSTRAINT PK_NetWorth PRIMARY KEY (id)
+  id         INT          NOT NULL AUTO_INCREMENT,
+  allocId    INT          NOT NULL,
+  month      VARCHAR(255) NOT NULL,
+  year       INT          NOT NULL,
+  value      INT          NOT NULL,
+  dateAdded  DATE         NOT NULL,
+  addedBy    VARCHAR(255) NOT NULL,
+  updateDate DATE         NULL    ,
+  updateBy   VARCHAR(255) NULL    ,
+  PRIMARY KEY (id)
 );
-
-ALTER TABLE NetWorth
-  ADD CONSTRAINT UQ_id UNIQUE (id);
-
-CREATE SEQUENCE SEQ_NetWorth
-START WITH 1
-INCREMENT BY 1;
-
-CREATE OR REPLACE TRIGGER SEQ_TRG_NetWorth
-BEFORE INSERT ON NetWorth
-REFERENCING NEW AS NEW FOR EACH ROW
-BEGIN
-  SELECT SEQ_NetWorth.NEXTVAL
-  INTO: NEW.id
-  FROM DUAL;
-END;
 
 CREATE TABLE YearlyGrowth
 (
-  id                  NUMBER   NOT NULL,
-  allocId             NUMBER   NOT NULL,
-  year                NUMBER   NOT NULL,
-  totalContribution   NUMBER   NOT NULL,
-  averageContribution NUMBER   NOT NULL,
-  averageCurrentValue NUMBER   NOT NULL,
-  averageGrowthRate   NUMBER   NOT NULL,
-  dateAdded           DATE     NOT NULL,
-  addedBy             VARCHAR2 NOT NULL,
-  updateDate          DATE    ,
-  updateBy            VARCHAR2,
-  CONSTRAINT PK_YearlyGrowth PRIMARY KEY (id)
+  id                  INT          NOT NULL AUTO_INCREMENT,
+  allocId             INT          NOT NULL,
+  year                INT          NOT NULL,
+  totalContribution   INT          NOT NULL,
+  averageContribution INT          NOT NULL,
+  averageCurrentValue INT          NOT NULL,
+  averageGrowthRate   INT          NOT NULL,
+  dateAdded           DATE         NOT NULL,
+  addedBy             VARCHAR(255) NOT NULL,
+  updateDate          DATE         NULL    ,
+  updateBy            VARCHAR(255) NULL    ,
+  PRIMARY KEY (id)
 );
-
-ALTER TABLE YearlyGrowth
-  ADD CONSTRAINT UQ_id UNIQUE (id);
-
-CREATE SEQUENCE SEQ_YearlyGrowth
-START WITH 1
-INCREMENT BY 1;
-
-CREATE OR REPLACE TRIGGER SEQ_TRG_YearlyGrowth
-BEFORE INSERT ON YearlyGrowth
-REFERENCING NEW AS NEW FOR EACH ROW
-BEGIN
-  SELECT SEQ_YearlyGrowth.NEXTVAL
-  INTO: NEW.id
-  FROM DUAL;
-END;
 
 ALTER TABLE InvestmentsAndSavingsDay
   ADD CONSTRAINT FK_AllocationMapping_TO_InvestmentsAndSavingsDay

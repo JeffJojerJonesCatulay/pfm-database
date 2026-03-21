@@ -1,7 +1,7 @@
 
 CREATE TABLE WantList
 (
-  id             NUMBER   NOT NULL,
+  id             NUMBER   NOT NULL AUTO_INCREMENT,
   dateWanted     DATE     NOT NULL,
   item           VARCHAR2 NOT NULL,
   estimatedPrice NUMBER   NOT NULL,
@@ -10,23 +10,10 @@ CREATE TABLE WantList
   status         VARCHAR2 NOT NULL,
   dateAdded      DATE     NOT NULL,
   addedBy        VARCHAR2 NOT NULL,
-  updateDate     DATE    ,
-  updateBy       VARCHAR2,
-  CONSTRAINT PK_WantList PRIMARY KEY (id)
+  updateDate     DATE     NULL    ,
+  updateBy       VARCHAR2 NULL    ,
+  PRIMARY KEY (id)
 );
 
 ALTER TABLE WantList
   ADD CONSTRAINT UQ_id UNIQUE (id);
-
-CREATE SEQUENCE SEQ_WantList
-START WITH 1
-INCREMENT BY 1;
-
-CREATE OR REPLACE TRIGGER SEQ_TRG_WantList
-BEFORE INSERT ON WantList
-REFERENCING NEW AS NEW FOR EACH ROW
-BEGIN
-  SELECT SEQ_WantList.NEXTVAL
-  INTO: NEW.id
-  FROM DUAL;
-END;

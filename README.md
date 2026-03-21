@@ -22,4 +22,18 @@ The database module is designed to:
 - **Seed Data** – Sample datasets for testing and development
 - **Configuration** – Environment and connection settings
 
-![ERD](erd/erd.png)
+## ERD - Credit Card Related Tables
+
+![ERD](erd/image/pfm-cc-related.png)
+
+## ERD - Investment/Savings Related Tables
+
+![ERD](erd/image/pfm-investment-related.png)
+
+## ERD - Salary Related Tables
+
+![ERD](erd/image/pfm-salary-related.png)
+
+## ERD - Want List Related Tables
+
+![ERD](erd/image/pfm-want-related.png)

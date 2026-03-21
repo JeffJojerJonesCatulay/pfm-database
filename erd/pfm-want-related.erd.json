@@ -4,13 +4,13 @@
   "settings": {
     "width": 3000,
     "height": 3000,
-    "scrollTop": -707,
+    "scrollTop": -907,
     "scrollLeft": -325.9212,
     "zoomLevel": 0.94,
     "show": 511,
-    "database": 8,
+    "database": 4,
     "databaseName": "PFM_DB",
-    "canvasType": "ERD",
+    "canvasType": "@dineug/erd-editor/builtin-schema-sql",
     "language": 1,
     "tableNameCase": 4,
     "columnNameCase": 2,
@@ -558,7 +558,7 @@
         "tableId": "fOjrMx_o0AXvApo38oGAU",
         "name": "allocId",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 15,
         "ui": {
@@ -578,7 +578,7 @@
         "tableId": "fOjrMx_o0AXvApo38oGAU",
         "name": "allocation",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -598,7 +598,7 @@
         "tableId": "fOjrMx_o0AXvApo38oGAU",
         "name": "type",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -618,7 +618,7 @@
         "tableId": "fOjrMx_o0AXvApo38oGAU",
         "name": "description",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 0,
         "ui": {
@@ -638,7 +638,7 @@
         "tableId": "fOjrMx_o0AXvApo38oGAU",
         "name": "status",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -678,7 +678,7 @@
         "tableId": "fOjrMx_o0AXvApo38oGAU",
         "name": "addedBy",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -718,7 +718,7 @@
         "tableId": "fOjrMx_o0AXvApo38oGAU",
         "name": "updateBy",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 0,
         "ui": {
@@ -738,7 +738,7 @@
         "tableId": "vmKmYvcCv7_7CbfKB53jK",
         "name": "id",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 15,
         "ui": {
@@ -758,7 +758,7 @@
         "tableId": "vmKmYvcCv7_7CbfKB53jK",
         "name": "ccId",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -778,7 +778,7 @@
         "tableId": "vmKmYvcCv7_7CbfKB53jK",
         "name": "connectedApp",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -798,7 +798,7 @@
         "tableId": "vmKmYvcCv7_7CbfKB53jK",
         "name": "subscription",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 0,
         "ui": {
@@ -818,7 +818,7 @@
         "tableId": "vmKmYvcCv7_7CbfKB53jK",
         "name": "autoDebit",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 0,
         "ui": {
@@ -838,7 +838,7 @@
         "tableId": "vmKmYvcCv7_7CbfKB53jK",
         "name": "amount",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 0,
         "ui": {
@@ -878,7 +878,7 @@
         "tableId": "vmKmYvcCv7_7CbfKB53jK",
         "name": "remarks",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 0,
         "ui": {
@@ -918,7 +918,7 @@
         "tableId": "vmKmYvcCv7_7CbfKB53jK",
         "name": "addedBy",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 0,
         "ui": {
@@ -958,7 +958,7 @@
         "tableId": "vmKmYvcCv7_7CbfKB53jK",
         "name": "updateBy",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 0,
         "ui": {
@@ -978,7 +978,7 @@
         "tableId": "sTVIb8UKwvVOqGY5RH8Es",
         "name": "ccId",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 15,
         "ui": {
@@ -998,7 +998,7 @@
         "tableId": "sTVIb8UKwvVOqGY5RH8Es",
         "name": "ccName",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -1018,7 +1018,7 @@
         "tableId": "sTVIb8UKwvVOqGY5RH8Es",
         "name": "ccLastDigit",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -1038,7 +1038,7 @@
         "tableId": "sTVIb8UKwvVOqGY5RH8Es",
         "name": "ccAcronym",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -1078,7 +1078,7 @@
         "tableId": "sTVIb8UKwvVOqGY5RH8Es",
         "name": "addedBy",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -1118,7 +1118,7 @@
         "tableId": "sTVIb8UKwvVOqGY5RH8Es",
         "name": "updateBy",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 0,
         "ui": {
@@ -1138,7 +1138,7 @@
         "tableId": "Cp1s0sqhk4rvzHnOktW6S",
         "name": "id",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 15,
         "ui": {
@@ -1158,7 +1158,7 @@
         "tableId": "Cp1s0sqhk4rvzHnOktW6S",
         "name": "ccRecId",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -1178,7 +1178,7 @@
         "tableId": "Cp1s0sqhk4rvzHnOktW6S",
         "name": "month",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -1198,7 +1198,7 @@
         "tableId": "Cp1s0sqhk4rvzHnOktW6S",
         "name": "day",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -1218,7 +1218,7 @@
         "tableId": "Cp1s0sqhk4rvzHnOktW6S",
         "name": "year",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -1238,7 +1238,7 @@
         "tableId": "Cp1s0sqhk4rvzHnOktW6S",
         "name": "rawDate",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -1258,7 +1258,7 @@
         "tableId": "Cp1s0sqhk4rvzHnOktW6S",
         "name": "expenseDescription",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -1278,7 +1278,7 @@
         "tableId": "Cp1s0sqhk4rvzHnOktW6S",
         "name": "expenseValue",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -1318,7 +1318,7 @@
         "tableId": "Cp1s0sqhk4rvzHnOktW6S",
         "name": "addedBy",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -1358,7 +1358,7 @@
         "tableId": "Cp1s0sqhk4rvzHnOktW6S",
         "name": "updatedBy",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 0,
         "ui": {
@@ -1378,7 +1378,7 @@
         "tableId": "7s-_WU8oklVILrjOdjcW0",
         "name": "ccRecId",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 15,
         "ui": {
@@ -1398,7 +1398,7 @@
         "tableId": "7s-_WU8oklVILrjOdjcW0",
         "name": "ccId",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -1478,7 +1478,7 @@
         "tableId": "7s-_WU8oklVILrjOdjcW0",
         "name": "status",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -1518,7 +1518,7 @@
         "tableId": "7s-_WU8oklVILrjOdjcW0",
         "name": "addedBy",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -1558,7 +1558,7 @@
         "tableId": "7s-_WU8oklVILrjOdjcW0",
         "name": "updatedBy",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 0,
         "ui": {
@@ -1618,7 +1618,7 @@
         "tableId": "vmKmYvcCv7_7CbfKB53jK",
         "name": "ccId",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 15,
         "ui": {
@@ -1638,7 +1638,7 @@
         "tableId": "sTVIb8UKwvVOqGY5RH8Es",
         "name": "ccId",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -1658,7 +1658,7 @@
         "tableId": "vmKmYvcCv7_7CbfKB53jK",
         "name": "ccId",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -1678,7 +1678,7 @@
         "tableId": "7s-_WU8oklVILrjOdjcW0",
         "name": "ccId",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -1698,7 +1698,7 @@
         "tableId": "Cp1s0sqhk4rvzHnOktW6S",
         "name": "ccRecId",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -1718,7 +1718,7 @@
         "tableId": "ycMqZ7Ueot7qr74myw781",
         "name": "id",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 15,
         "ui": {
@@ -1738,7 +1738,7 @@
         "tableId": "ycMqZ7Ueot7qr74myw781",
         "name": "month",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -1758,7 +1758,7 @@
         "tableId": "ycMqZ7Ueot7qr74myw781",
         "name": "day",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -1778,7 +1778,7 @@
         "tableId": "ycMqZ7Ueot7qr74myw781",
         "name": "year",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -1818,7 +1818,7 @@
         "tableId": "ycMqZ7Ueot7qr74myw781",
         "name": "valueAdded",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -1838,7 +1838,7 @@
         "tableId": "ycMqZ7Ueot7qr74myw781",
         "name": "marketValue",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -1878,7 +1878,7 @@
         "tableId": "ycMqZ7Ueot7qr74myw781",
         "name": "addedBy",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -1918,7 +1918,7 @@
         "tableId": "ycMqZ7Ueot7qr74myw781",
         "name": "updateBy",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 0,
         "ui": {
@@ -1938,7 +1938,7 @@
         "tableId": "ycMqZ7Ueot7qr74myw781",
         "name": "allocId",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -1958,7 +1958,7 @@
         "tableId": "BoBuFsxpSCgOxfxW0ukcy",
         "name": "id",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 15,
         "ui": {
@@ -1978,7 +1978,7 @@
         "tableId": "BoBuFsxpSCgOxfxW0ukcy",
         "name": "month",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -1998,7 +1998,7 @@
         "tableId": "BoBuFsxpSCgOxfxW0ukcy",
         "name": "year",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -2018,7 +2018,7 @@
         "tableId": "BoBuFsxpSCgOxfxW0ukcy",
         "name": "contribution",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -2038,7 +2038,7 @@
         "tableId": "BoBuFsxpSCgOxfxW0ukcy",
         "name": "totalContribution",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -2058,7 +2058,7 @@
         "tableId": "BoBuFsxpSCgOxfxW0ukcy",
         "name": "currentValue",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -2078,7 +2078,7 @@
         "tableId": "BoBuFsxpSCgOxfxW0ukcy",
         "name": "growthRate",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -2098,7 +2098,7 @@
         "tableId": "BoBuFsxpSCgOxfxW0ukcy",
         "name": "previousContrib",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -2138,7 +2138,7 @@
         "tableId": "BoBuFsxpSCgOxfxW0ukcy",
         "name": "addedBy",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -2178,7 +2178,7 @@
         "tableId": "BoBuFsxpSCgOxfxW0ukcy",
         "name": "updateBy",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 0,
         "ui": {
@@ -2198,7 +2198,7 @@
         "tableId": "BoBuFsxpSCgOxfxW0ukcy",
         "name": "allocId",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -2218,7 +2218,7 @@
         "tableId": "CkqGv7HxvQDDWIFUH_RkO",
         "name": "id",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 15,
         "ui": {
@@ -2238,7 +2238,7 @@
         "tableId": "CkqGv7HxvQDDWIFUH_RkO",
         "name": "month",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -2258,7 +2258,7 @@
         "tableId": "CkqGv7HxvQDDWIFUH_RkO",
         "name": "year",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -2278,7 +2278,7 @@
         "tableId": "CkqGv7HxvQDDWIFUH_RkO",
         "name": "value",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -2318,7 +2318,7 @@
         "tableId": "CkqGv7HxvQDDWIFUH_RkO",
         "name": "addedBy",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -2358,7 +2358,7 @@
         "tableId": "CkqGv7HxvQDDWIFUH_RkO",
         "name": "updateBy",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 0,
         "ui": {
@@ -2378,7 +2378,7 @@
         "tableId": "CkqGv7HxvQDDWIFUH_RkO",
         "name": "allocId",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -2398,7 +2398,7 @@
         "tableId": "8EqLyUXDiw3BqsgJ378JQ",
         "name": "id",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 15,
         "ui": {
@@ -2418,7 +2418,7 @@
         "tableId": "8EqLyUXDiw3BqsgJ378JQ",
         "name": "salaryId",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 0,
         "ui": {
@@ -2438,7 +2438,7 @@
         "tableId": "8EqLyUXDiw3BqsgJ378JQ",
         "name": "month",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -2458,7 +2458,7 @@
         "tableId": "8EqLyUXDiw3BqsgJ378JQ",
         "name": "day",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -2478,7 +2478,7 @@
         "tableId": "8EqLyUXDiw3BqsgJ378JQ",
         "name": "year",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -2518,7 +2518,7 @@
         "tableId": "8EqLyUXDiw3BqsgJ378JQ",
         "name": "expenseDescription",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -2538,7 +2538,7 @@
         "tableId": "8EqLyUXDiw3BqsgJ378JQ",
         "name": "expenseValue",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -2558,7 +2558,7 @@
         "tableId": "8EqLyUXDiw3BqsgJ378JQ",
         "name": "expenseType",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -2598,7 +2598,7 @@
         "tableId": "8EqLyUXDiw3BqsgJ378JQ",
         "name": "addedBy",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -2638,7 +2638,7 @@
         "tableId": "8EqLyUXDiw3BqsgJ378JQ",
         "name": "updateBy",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 0,
         "ui": {
@@ -2658,7 +2658,7 @@
         "tableId": "jXnfOEL_ojxpulM5fyQhF",
         "name": "salaryId",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 15,
         "ui": {
@@ -2698,7 +2698,7 @@
         "tableId": "jXnfOEL_ojxpulM5fyQhF",
         "name": "salary",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -2718,7 +2718,7 @@
         "tableId": "jXnfOEL_ojxpulM5fyQhF",
         "name": "status",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -2758,7 +2758,7 @@
         "tableId": "jXnfOEL_ojxpulM5fyQhF",
         "name": "addedBy",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -2798,7 +2798,7 @@
         "tableId": "jXnfOEL_ojxpulM5fyQhF",
         "name": "updateBy",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 0,
         "ui": {
@@ -2818,7 +2818,7 @@
         "tableId": "8EqLyUXDiw3BqsgJ378JQ",
         "name": "salaryId",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -2838,7 +2838,7 @@
         "tableId": "e6bM1ixnDjROHpjnPlPVm",
         "name": "id",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 15,
         "ui": {
@@ -2878,14 +2878,14 @@
         "tableId": "e6bM1ixnDjROHpjnPlPVm",
         "name": "item",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 61,
+          "widthDataType": 81,
           "widthDefault": 60
         },
         "meta": {
@@ -2898,7 +2898,7 @@
         "tableId": "e6bM1ixnDjROHpjnPlPVm",
         "name": "estimatedPrice",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -2918,14 +2918,14 @@
         "tableId": "e6bM1ixnDjROHpjnPlPVm",
         "name": "afford",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 61,
+          "widthDataType": 81,
           "widthDefault": 60
         },
         "meta": {
@@ -2938,14 +2938,14 @@
         "tableId": "e6bM1ixnDjROHpjnPlPVm",
         "name": "remarks",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 61,
+          "widthDataType": 81,
           "widthDefault": 60
         },
         "meta": {
@@ -2958,14 +2958,14 @@
         "tableId": "e6bM1ixnDjROHpjnPlPVm",
         "name": "status",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 61,
+          "widthDataType": 81,
           "widthDefault": 60
         },
         "meta": {
@@ -2998,14 +2998,14 @@
         "tableId": "e6bM1ixnDjROHpjnPlPVm",
         "name": "addedBy",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 61,
+          "widthDataType": 81,
           "widthDefault": 60
         },
         "meta": {
@@ -3038,14 +3038,14 @@
         "tableId": "e6bM1ixnDjROHpjnPlPVm",
         "name": "updateBy",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 0,
         "ui": {
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 61,
+          "widthDataType": 81,
           "widthDefault": 60
         },
         "meta": {
@@ -3058,7 +3058,7 @@
         "tableId": "DtgAFXLF0EljWHlzXAZof",
         "name": "id",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 15,
         "ui": {
@@ -3078,7 +3078,7 @@
         "tableId": "DtgAFXLF0EljWHlzXAZof",
         "name": "year",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -3098,7 +3098,7 @@
         "tableId": "DtgAFXLF0EljWHlzXAZof",
         "name": "totalContribution",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -3118,7 +3118,7 @@
         "tableId": "DtgAFXLF0EljWHlzXAZof",
         "name": "averageContribution",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -3138,7 +3138,7 @@
         "tableId": "DtgAFXLF0EljWHlzXAZof",
         "name": "averageCurrentValue",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -3158,7 +3158,7 @@
         "tableId": "DtgAFXLF0EljWHlzXAZof",
         "name": "averageGrowthRate",
         "comment": "",
-        "dataType": "NUMBER",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
@@ -3198,7 +3198,7 @@
         "tableId": "DtgAFXLF0EljWHlzXAZof",
         "name": "addedBy",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
@@ -3238,7 +3238,7 @@
         "tableId": "DtgAFXLF0EljWHlzXAZof",
         "name": "updateBy",
         "comment": "",
-        "dataType": "VARCHAR2",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 0,
         "ui": {

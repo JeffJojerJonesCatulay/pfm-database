@@ -10,7 +10,7 @@
     "show": 511,
     "database": 4,
     "databaseName": "PFM_DB",
-    "canvasType": "@dineug/erd-editor/builtin-schema-sql",
+    "canvasType": "ERD",
     "language": 1,
     "tableNameCase": 4,
     "columnNameCase": 2,
@@ -2840,7 +2840,7 @@
         "comment": "",
         "dataType": "INT",
         "default": "",
-        "options": 15,
+        "options": 11,
         "ui": {
           "keys": 1,
           "widthName": 60,
@@ -2849,7 +2849,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1774055295137,
+          "updateAt": 1774096031087,
           "createAt": 1774055194037
         }
       },

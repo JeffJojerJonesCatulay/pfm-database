@@ -47,3 +47,7 @@ The database module is designed to:
 ## ERD - Want List Related Tables
 
 ![ERD](erd/image/pfm-want-related.png)
+
+## ERD - User Auth Related Tables
+
+![ERD](erd/image/pfm-user-related.png)

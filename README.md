@@ -22,6 +22,15 @@ The database module is designed to:
 - **Seed Data** – Sample datasets for testing and development
 - **Configuration** – Environment and connection settings
 
+## Database Information
+
+- **MySQL Workbench 8.0**
+
+## ERD Tool
+
+- **Use ERD Editor extension on VS Code or Cursor IDE**
+  ![ERD Editor](erd/image/erd-editor-ext.png)
+
 ## ERD - Credit Card Related Tables
 
 ![ERD](erd/image/pfm-cc-related.png)

@@ -1,94 +1,79 @@
 
 CREATE TABLE AllocationMapping
 (
-  allocId     NUMBER   NOT NULL AUTO_INCREMENT,
-  allocation  VARCHAR2 NOT NULL,
-  type        VARCHAR2 NOT NULL,
-  description VARCHAR2 NULL    ,
-  status      VARCHAR2 NOT NULL,
-  dateAdded   DATE     NOT NULL,
-  addedBy     VARCHAR2 NOT NULL,
-  updateDate  DATE     NULL    ,
-  updateBy    VARCHAR2 NULL    ,
+  allocId     INT          NOT NULL AUTO_INCREMENT,
+  allocation  VARCHAR(255) NOT NULL,
+  type        VARCHAR(255) NOT NULL,
+  description VARCHAR(255) NULL    ,
+  status      VARCHAR(255) NOT NULL,
+  dateAdded   DATE         NOT NULL,
+  addedBy     VARCHAR(255) NOT NULL,
+  updateDate  DATE         NULL    ,
+  updateBy    VARCHAR(255) NULL    ,
   PRIMARY KEY (allocId)
 );
 
-ALTER TABLE AllocationMapping
-  ADD CONSTRAINT UQ_allocId UNIQUE (allocId);
-
 CREATE TABLE InvestmentsAndSavingsDay
 (
-  id          NUMBER   NOT NULL AUTO_INCREMENT,
-  allocId     NUMBER   NOT NULL,
-  date        DATE     NOT NULL,
-  valueAdded  NUMBER   NOT NULL,
-  marketValue NUMBER   NOT NULL,
-  dateAdded   DATE     NOT NULL,
-  addedBy     VARCHAR2 NOT NULL,
-  updateDate  DATE     NULL    ,
-  updateBy    VARCHAR2 NULL    ,
+  id          INT          NOT NULL AUTO_INCREMENT,
+  allocId     INT          NOT NULL,
+  date        DATE         NOT NULL,
+  valueAdded  INT          NOT NULL,
+  marketValue INT          NOT NULL,
+  dateAdded   DATE         NOT NULL,
+  addedBy     VARCHAR(255) NOT NULL,
+  updateDate  DATE         NULL    ,
+  updateBy    VARCHAR(255) NULL    ,
   PRIMARY KEY (id)
 );
-
-ALTER TABLE InvestmentsAndSavingsDay
-  ADD CONSTRAINT UQ_id UNIQUE (id);
 
 CREATE TABLE MonthlyGrowth
 (
-  id                NUMBER   NOT NULL AUTO_INCREMENT,
-  allocId           NUMBER   NOT NULL,
-  month             VARCHAR2 NOT NULL,
-  year              NUMBER   NOT NULL,
-  contribution      NUMBER   NOT NULL,
-  totalContribution NUMBER   NOT NULL,
-  currentValue      NUMBER   NOT NULL,
-  growthRate        NUMBER   NOT NULL,
-  previousContrib   NUMBER   NOT NULL,
-  dateAdded         DATE     NOT NULL,
-  addedBy           VARCHAR2 NOT NULL,
-  updateDate        DATE     NULL    ,
-  updateBy          VARCHAR2 NULL    ,
+  id                INT          NOT NULL AUTO_INCREMENT,
+  allocId           INT          NOT NULL,
+  month             VARCHAR(255) NOT NULL,
+  year              INT          NOT NULL,
+  contribution      INT          NOT NULL,
+  totalContribution INT          NOT NULL,
+  currentValue      INT          NOT NULL,
+  growthRate        INT          NOT NULL,
+  previousContrib   INT          NOT NULL,
+  dateAdded         DATE         NOT NULL,
+  addedBy           VARCHAR(255) NOT NULL,
+  updateDate        DATE         NULL    ,
+  updateBy          VARCHAR(255) NULL    ,
   PRIMARY KEY (id)
 );
-
-ALTER TABLE MonthlyGrowth
-  ADD CONSTRAINT UQ_id UNIQUE (id);
 
 CREATE TABLE NetWorth
 (
-  id         NUMBER   NOT NULL AUTO_INCREMENT,
-  allocId    NUMBER   NOT NULL,
-  month      VARCHAR2 NOT NULL,
-  year       NUMBER   NOT NULL,
-  value      NUMBER   NOT NULL,
-  dateAdded  DATE     NOT NULL,
-  addedBy    VARCHAR2 NOT NULL,
-  updateDate DATE     NULL    ,
-  updateBy   VARCHAR2 NULL    ,
+  id         INT          NOT NULL AUTO_INCREMENT,
+  allocId    INT          NOT NULL,
+  month      VARCHAR(255) NOT NULL,
+  year       INT          NOT NULL,
+  value      INT          NOT NULL,
+  dateAdded  DATE         NOT NULL,
+  addedBy    VARCHAR(255) NOT NULL,
+  updateDate DATE         NULL    ,
+  updateBy   VARCHAR(255) NULL    ,
   PRIMARY KEY (id)
 );
-
-ALTER TABLE NetWorth
-  ADD CONSTRAINT UQ_id UNIQUE (id);
 
 CREATE TABLE YearlyGrowth
 (
-  id                  NUMBER   NOT NULL AUTO_INCREMENT,
-  allocId             NUMBER   NOT NULL,
-  year                NUMBER   NOT NULL,
-  totalContribution   NUMBER   NOT NULL,
-  averageContribution NUMBER   NOT NULL,
-  averageCurrentValue NUMBER   NOT NULL,
-  averageGrowthRate   NUMBER   NOT NULL,
-  dateAdded           DATE     NOT NULL,
-  addedBy             VARCHAR2 NOT NULL,
-  updateDate          DATE     NULL    ,
-  updateBy            VARCHAR2 NULL    ,
+  id                  INT          NOT NULL AUTO_INCREMENT,
+  allocId             INT          NOT NULL,
+  year                INT          NOT NULL,
+  totalContribution   INT          NOT NULL,
+  averageContribution INT          NOT NULL,
+  averageCurrentValue INT          NOT NULL,
+  averageGrowthRate   INT          NOT NULL,
+  dateAdded           DATE         NOT NULL,
+  addedBy             VARCHAR(255) NOT NULL,
+  updateDate          DATE         NULL    ,
+  updateBy            VARCHAR(255) NULL    ,
   PRIMARY KEY (id)
 );
-
-ALTER TABLE YearlyGrowth
-  ADD CONSTRAINT UQ_id UNIQUE (id);
 
 ALTER TABLE InvestmentsAndSavingsDay
   ADD CONSTRAINT FK_AllocationMapping_TO_InvestmentsAndSavingsDay

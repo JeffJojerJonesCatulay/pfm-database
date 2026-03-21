@@ -2894,18 +2894,18 @@
         "tableId": "e6bM1ixnDjROHpjnPlPVm",
         "name": "password",
         "comment": "",
-        "dataType": "INT",
+        "dataType": "VARCHAR(255)",
         "default": "",
         "options": 8,
         "ui": {
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 60,
+          "widthDataType": 81,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1774095960931,
+          "updateAt": 1774101080672,
           "createAt": 1774055216389
         }
       },

@@ -30,7 +30,7 @@ The database module is designed to:
 
 - **Use ERD Editor extension on VS Code or Cursor IDE**
 
-![ERD Editor](erd/image/erd-editor-ext.png)
+![ERD Editor](./erd/image/erd-editor-ext.png)
 
 ## ERD - Credit Card Related Tables
 

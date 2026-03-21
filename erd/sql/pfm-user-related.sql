@@ -10,3 +10,6 @@ CREATE TABLE UserAuth
   updateBy   VARCHAR(255) NULL    ,
   PRIMARY KEY (id)
 );
+
+ALTER TABLE UserAuth
+  ADD CONSTRAINT UQ_username UNIQUE (username);

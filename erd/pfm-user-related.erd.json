@@ -2876,7 +2876,7 @@
         "comment": "",
         "dataType": "VARCHAR(255)",
         "default": "",
-        "options": 8,
+        "options": 12,
         "ui": {
           "keys": 0,
           "widthName": 60,
@@ -2885,7 +2885,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1774095955226,
+          "updateAt": 1774104357097,
           "createAt": 1774055209107
         }
       },

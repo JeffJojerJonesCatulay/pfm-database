@@ -51,3 +51,7 @@ The database module is designed to:
 ## ERD - User Auth Related Tables
 
 ![ERD](erd/image/pfm-user-related.png)
+
+## ERD - API Request Logs Table
+
+![ERD](erd/image/pfm-request-logs.png)

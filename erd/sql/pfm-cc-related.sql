@@ -1,18 +1,18 @@
 
 CREATE TABLE CCConnectedApp
 (
-  id           INT          NOT NULL AUTO_INCREMENT,
-  ccId         INT          NOT NULL,
-  connectedApp VARCHAR(255) NOT NULL,
-  subscription VARCHAR(255) NULL    ,
-  autoDebit    VARCHAR(255) NULL    ,
-  amount       VARCHAR(255) NULL    ,
-  date         DATE         NULL    ,
-  remarks      VARCHAR(255) NULL    ,
-  dateAdded    DATE         NOT NULL,
-  addedBy      VARCHAR(255) NULL    ,
-  updateDate   DATE         NULL    ,
-  updateBy     VARCHAR(255) NULL    ,
+  id           INT            NOT NULL AUTO_INCREMENT,
+  ccId         INT            NOT NULL,
+  connectedApp VARCHAR(255)   NOT NULL,
+  subscription VARCHAR(255)   NULL    ,
+  autoDebit    VARCHAR(255)   NULL    ,
+  amount       DECIMAL(15, 2) NULL    ,
+  date         DATE           NULL    ,
+  remarks      VARCHAR(255)   NULL    ,
+  dateAdded    DATE           NOT NULL,
+  addedBy      VARCHAR(255)   NULL    ,
+  updateDate   DATE           NULL    ,
+  updateBy     VARCHAR(255)   NULL    ,
   PRIMARY KEY (id)
 );
 
@@ -31,15 +31,15 @@ CREATE TABLE CCDetails
 
 CREATE TABLE CCRecordExpenseTracker
 (
-  ccExpId            INT          NOT NULL AUTO_INCREMENT,
-  ccRecId            INT          NOT NULL,
-  date               VARCHAR(255) NOT NULL,
-  expenseDescription VARCHAR(255) NOT NULL,
-  expenseValue       INT          NOT NULL,
-  dateAdded          DATE         NOT NULL,
-  addedBy            VARCHAR(255) NOT NULL,
-  updateDate         DATE         NULL    ,
-  updatedBy          VARCHAR(255) NULL    ,
+  ccExpId            INT            NOT NULL AUTO_INCREMENT,
+  ccRecId            INT            NOT NULL,
+  date               VARCHAR(255)   NOT NULL,
+  expenseDescription VARCHAR(255)   NOT NULL,
+  expenseValue       DECIMAL(15, 2) NOT NULL,
+  dateAdded          DATE           NOT NULL,
+  addedBy            VARCHAR(255)   NOT NULL,
+  updateDate         DATE           NULL    ,
+  updatedBy          VARCHAR(255)   NULL    ,
   PRIMARY KEY (ccExpId)
 );
 

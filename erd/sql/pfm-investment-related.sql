@@ -45,20 +45,6 @@ CREATE TABLE MonthlyGrowth
   PRIMARY KEY (id)
 );
 
-CREATE TABLE NetWorth
-(
-  id         INT            NOT NULL AUTO_INCREMENT,
-  allocId    INT            NOT NULL,
-  month      VARCHAR(255)   NOT NULL,
-  year       INT            NOT NULL,
-  value      DECIMAL(15, 2) NOT NULL,
-  dateAdded  DATE           NOT NULL,
-  addedBy    VARCHAR(255)   NOT NULL,
-  updateDate DATE           NULL    ,
-  updateBy   VARCHAR(255)   NULL    ,
-  PRIMARY KEY (id)
-);
-
 CREATE TABLE YearlyGrowth
 (
   id                  INT            NOT NULL AUTO_INCREMENT,
@@ -82,11 +68,6 @@ ALTER TABLE InvestmentsAndSavingsDay
 
 ALTER TABLE MonthlyGrowth
   ADD CONSTRAINT FK_AllocationMapping_TO_MonthlyGrowth
-    FOREIGN KEY (allocId)
-    REFERENCES AllocationMapping (allocId);
-
-ALTER TABLE NetWorth
-  ADD CONSTRAINT FK_AllocationMapping_TO_NetWorth
     FOREIGN KEY (allocId)
     REFERENCES AllocationMapping (allocId);
 

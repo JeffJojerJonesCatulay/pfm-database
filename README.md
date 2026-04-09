@@ -48,6 +48,10 @@ The database module is designed to:
 
 ![ERD](erd/image/pfm-want-related.png)
 
+## ERD - Networth Table
+
+![ERD](erd/image/pfm-networth-related.png)
+
 ## ERD - User Auth Related Tables
 
 ![ERD](erd/image/pfm-user-related.png)
